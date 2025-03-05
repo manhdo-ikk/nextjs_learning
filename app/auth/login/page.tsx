@@ -1,6 +1,7 @@
 "use client";
-import { Button, Form, Link } from "@heroui/react";
+import { Button, Form } from "@heroui/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
@@ -52,9 +53,7 @@ export default function Login() {
           </Button>
 
           <div className="w-full flex justify-center mt-2">
-            <Link color="primary" href="/auth/register" size="sm">
-              Register
-            </Link>
+            <Link href="/auth/register">Register</Link>
           </div>
 
           <div className="w-full flex gap-4 items-center mt-6">

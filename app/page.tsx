@@ -4,6 +4,6 @@ export default function Home() {
       <div className="inline-block max-w-xl text-center justify-center">
         Hello
       </div>
-  </section>
+    </section>
   );
 }

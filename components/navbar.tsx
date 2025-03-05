@@ -1,17 +1,19 @@
+"use client";
 import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Navbar as NextUINavbar,
 } from "@heroui/navbar";
-import { link as linkStyles } from "@heroui/theme";
-import clsx from "clsx";
 import NextLink from "next/link";
+import { usePathname } from "next/navigation";
 
 import { Logo } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
+  const pathName = usePathname();
+
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -25,10 +27,7 @@ export const Navbar = () => {
           {siteConfig.navGuestItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
-                )}
+                className={pathName === item.href ? "text-blue-500" : ""}
                 color="foreground"
                 href={item.href}
               >

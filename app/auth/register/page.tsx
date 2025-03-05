@@ -1,6 +1,7 @@
 "use client";
-import { Button, Form, Link } from "@heroui/react";
+import { Button, Form } from "@heroui/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
@@ -18,7 +19,7 @@ export default function Register() {
   });
 
   const onSubmit: SubmitHandler<RegisterFormData> = (
-    data: RegisterFormData
+    data: RegisterFormData,
   ) => {
     console.log("Form submitted:", data);
   };
@@ -71,9 +72,7 @@ export default function Register() {
           </Button>
 
           <div className="w-full flex justify-center">
-            <Link color="primary" href="/auth/login" size="sm">
-              Login
-            </Link>
+            <Link href="/auth/login">Login</Link>
           </div>
 
           <div className="w-full flex gap-4 items-center mt-6">

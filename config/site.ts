@@ -18,5 +18,9 @@ export const siteConfig = {
       label: "Register",
       href: "/auth/register",
     },
+    {
+      label: "Tasks",
+      href: "/tasks/hihi",
+    },
   ],
 };
