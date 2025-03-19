@@ -7,7 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
 
 import FormField from "@/components/form-filed";
-import { LoginFormData, LoginSchema } from "@/types/auth";
+import { LoginFormData, LoginSchema } from "@/styles/types/auth";
 
 export default function Login() {
   const {

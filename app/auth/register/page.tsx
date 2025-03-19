@@ -7,7 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 import { ImGithub } from "react-icons/im";
 
 import FormField from "@/components/form-filed";
-import { RegisterFormData, RegisterSchema } from "@/types/auth";
+import { RegisterFormData, RegisterSchema } from "@/styles/types/auth";
 
 export default function Register() {
   const {
@@ -19,7 +19,7 @@ export default function Register() {
   });
 
   const onSubmit: SubmitHandler<RegisterFormData> = (
-    data: RegisterFormData,
+    data: RegisterFormData
   ) => {
     console.log("Form submitted:", data);
   };
