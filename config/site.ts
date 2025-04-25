@@ -20,7 +20,11 @@ export const siteConfig = {
     },
     {
       label: "Tasks",
-      href: "/tasks/hihi",
+      href: "/tasks",
+    },
+    {
+      label: "Paint",
+      href: "/paint",
     },
   ],
 };

@@ -19,7 +19,7 @@ export default function Register() {
   });
 
   const onSubmit: SubmitHandler<RegisterFormData> = (
-    data: RegisterFormData
+    data: RegisterFormData,
   ) => {
     console.log("Form submitted:", data);
   };
