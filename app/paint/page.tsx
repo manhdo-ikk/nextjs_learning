@@ -132,7 +132,7 @@ export default function DrawKanjiPaint() {
               },
             ],
           }),
-        }
+        },
       );
 
       const json = await response.json();
